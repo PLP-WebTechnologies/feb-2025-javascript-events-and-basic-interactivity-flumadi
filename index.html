@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My JavaScript Playground!</h1>
+        <p class="subtitle">A hands-on exploration of event handling and interactive elements</p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="card" id="event-handling">
+            <h2>Playing with Events</h2>
+            <p class="section-intro">Let's see how users interact with elements.</p>
+            
+            <div class="event-container">
+                <button id="click-button" class="fun-button">Try Clicking Me!</button>
+                <p class="section-intro">Try hovering your cursor over the area in mustard color below.</p>
+                <div id="hover-area" class="hover-demo">
+                    <p>Move your mouse over this box</p>
+                </div>
+                
+                <div class="keypress-demo">
+                    <label for="keypress-input">Type something here:</label>
+                    <input type="text" id="keypress-input" placeholder="Watch what happens as you type...">
+                    <p id="keypress-output" class="output-text"></p>
+                </div>
+                <p class="section-intro">Below two changes occur when one you double click and two long-press.</p>
+                <div id="secret-area" class="secret-feature">
+                    <p>Try double-clicking next holding me down</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="card" id="interactive-elements">
+            <h2>Interactive Components</h2>
+            <p class="section-intro">Change button color with JavaScript.</p>
+            
+            <div class="interactive-container">
+                <button id="color-changer" class="fun-button">Change My Color</button>
+                
+                <div class="gallery">
+                    <h3>Simple Image Viewer</h3>
+                    <div class="gallery-controls">
+                        <button id="prev-btn" class="gallery-btn">← Previous</button>
+                        <button id="next-btn" class="gallery-btn">Next →</button>
+                    </div>
+                    <div class="gallery-view">
+                        <img src="https://source.unsplash.com/random/600x400?nature,1" alt="Gallery image" id="gallery-image">
+                        <p id="image-counter" class="gallery-counter">Photo 1 of 5</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <h3>FAQ Accordion</h3>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How does this work?</button>
+                        <div class="accordion-content">
+                            <p>This accordion uses JavaScript to toggle content visibility when you click the headers.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Can I add more items?</button>
+                        <div class="accordion-content">
+                            <p>Absolutely! The code is designed to handle any number of accordion items.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Is this accessible?</button>
+                        <div class="accordion-content">
+                            <p>Yes, it follows basic accessibility guidelines with proper ARIA attributes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="card" id="form-validation">
+            <h2>Form Validation Demo</h2>
+            <p class="section-intro">Try submitting this form to see real-time validation in action.</p>
+            
+            <form id="validation-form" class="form-demo">
+                <div class="form-group">
+                    <label for="name">Your Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Required field">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Create Password*</label>
+                    <input type="password" id="password" name="password" placeholder="At least 8 characters">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-meter-fill"></div>
+                        </div>
+                        <div class="strength-text">Password strength</div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ for my JavaScript class<br>
+         Fridah Lumadi</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
